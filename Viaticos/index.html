@@ -23,19 +23,25 @@
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <link rel="stylesheet" type="text/css" href="css/template.css" />
         <title>Hello World</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+        <form id="form1" name="form1" action="menuPrincipal.html" method="post">
+            <div class="app">
+            <h1>BC Movil</h1>
+            <input type="text" id="usuario" name="usuario" placeholder='Nombre Usuario'/>
+            <br/>
+            <input type="text" id="password" name="password" placeholder='Contraseña'>
+            <br/>
+            <input type="submit" id="acceder" name="acceder" value="Acceder">
+            <br/>
         </div>
+        </form>
+        
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
-        <script type="text/javascript">
+		<script>
             app.initialize();
         </script>
     </body>
